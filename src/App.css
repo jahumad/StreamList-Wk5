@@ -1,5 +1,16 @@
+
+
 .App {
   text-align: center;
+  min-height: 100vh;
+}
+
+.App {
+  background-color: rgb(180, 46, 46);
+}
+
+.spacer {
+  margin-right: 10px;
 }
 
 .App-logo {
@@ -7,32 +18,110 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #4e7edf;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 4vmin);
+  color: rgb(116, 158, 177);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: rgb(10, 10, 83);
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e7cccc;
+  padding: 5px;
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+  padding: 20px;
+}
+
+.movie-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.movie-poster {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-container {
+  margin-top: 2900px;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+}
+
+.movie-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.movie-item img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-item h3 {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.about-container {
+  text-align: center; 
+  padding: 100px; 
+}
+
+.about-description {
+  font-size: 1.1em; 
+  line-height: 1.5; 
+  margin: 5px auto; 
+  max-width: 1000px; 
+}
+
